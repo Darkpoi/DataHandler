@@ -15,21 +15,13 @@ using System.Windows.Shapes;
 namespace DataHandler
 {
     /// <summary>
-    /// WindowB.xaml 的交互逻辑
+    /// WindowC.xaml 的交互逻辑
     /// </summary>
-    public partial class WindowB : Window
+    public partial class WindowC : Window
     {
-        public WindowB()
+        public WindowC()
         {
             InitializeComponent();
         }
-
-        private void DClick(object sender, MouseButtonEventArgs e)
-        {
-            //show.Background = 
-            ImageBrush tmp = new ImageBrush();
-            tmp.ImageSource = new BitmapImage(new Uri("按钮4 拷贝.png", UriKind.Relative));
-        }
-
     }
 }

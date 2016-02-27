@@ -86,6 +86,12 @@
     <Compile Include="WindowB.xaml.cs">
       <DependentUpon>WindowB.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowC.xaml.cs">
+      <DependentUpon>WindowC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowD.xaml.cs">
+      <DependentUpon>WindowD.xaml</DependentUpon>
+    </Compile>
     <Page Include="InputWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -107,6 +113,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="WindowB.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowD.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -224,6 +238,147 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="按钮4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="按钮3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="按钮1改.png" />
+    <Resource Include="按钮2改.png" />
+    <Resource Include="按钮3改.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="按钮4改.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="按钮1.png" />
+    <Resource Include="按钮2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="游标卡尺 C= √3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="秒表.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="物理天平.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="千分尺.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="米  尺 C=3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="选择P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="选择仪器.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="输入框.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ub显示区.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="B类不确定.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="B类不确定显示区.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="输入仪.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="0.990.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="0.977.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="0.955.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="0.950.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="0.900.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="0.683.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="0.500.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="界面D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="若无上述仪器，请输入△仪.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="显示屏.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="OK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="±1.5  mm %2860-100%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="±1.00  mm %2830-50%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="± 0.2  ℃.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="± 1  ℃.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="±0.08 mm %28 1m %29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="±1.2 mm%28 2m %29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="±0.05 mm %28300%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="±0.02 mm %28125%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="0.04 g （1_3及以下）.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="0.06 g （1_2）.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="0.08 g （近满）.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="±0.20 mm （1000）.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="±0.15 mm %28500%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="±0.10  mm %28150%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="0.7mg （1_3及以下）.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1.0 mg （1_2）.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1.3 mg （近满）.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="± 0004  mm.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -32,7 +32,7 @@
                 <ImageBrush ImageSource="求A类不确定度.png"/>
             </Button.Background>
         </Button>
-        <TextBlock Margin="281,462,175,67" Width="344.08" Height="72.6889">
+        <TextBlock Margin="289,462,167,67" Width="344.08" Height="72.6889">
             <TextBlock.Background>
                 <ImageBrush ImageSource="A显示区 .png"/>
             </TextBlock.Background></TextBlock>
@@ -40,10 +40,24 @@
             <TextBlock.Background>
                 <ImageBrush ImageSource="选择置信概率P.png"/>
             </TextBlock.Background></TextBlock>
-        <TextBlock x:Name="show" Margin="27,188,565,336"/>
-        <ListView Margin="539,107.311,53,416.689" BorderBrush="{x:Null}" MouseDoubleClick="DClick">
+        <ListView x:Name="LV4" Margin="539,185,53,339" BorderBrush="{x:Null}" MouseDoubleClick="DClick" Width="208.08" Height="77.6889">
             <ListView.Background>
                 <ImageBrush ImageSource="按钮4.png"/>
+            </ListView.Background>
+        </ListView>
+        <ListView x:Name="LV3" Margin="283,185,309,339" Width="208.08" Height="77.6889" BorderBrush="{x:Null}">
+            <ListView.Background>
+                <ImageBrush ImageSource="按钮3.png"/>
+            </ListView.Background>
+        </ListView>
+        <ListView Margin="283,79,309,445" Width="208.08" Height="77.6889" BorderBrush="{x:Null}">
+            <ListView.Background>
+                <ImageBrush ImageSource="按钮1.png"/>
+            </ListView.Background>
+        </ListView>
+        <ListView Margin="539,79,53,445" Height="77.6889" Width="208.08" BorderBrush="{x:Null}">
+            <ListView.Background>
+                <ImageBrush ImageSource="按钮2.png"/>
             </ListView.Background>
         </ListView>
     </Grid>
