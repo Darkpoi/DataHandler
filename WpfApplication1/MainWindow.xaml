@@ -52,12 +52,12 @@
             <TextBlock.Background>
                 <ImageBrush ImageSource="显示区.png"/>
             </TextBlock.Background></TextBlock>
-        <Button Margin="320,281,260,243" Width="220.08" Height="77.6889" BorderBrush="{x:Null}">
+        <Button Margin="320,281,260,243" Width="220.08" Height="77.6889" BorderBrush="{x:Null}" Click="To_WindowB">
             <Button.Background>
                 <ImageBrush ImageSource="BUTTON 1.png"/>
             </Button.Background>
         </Button>
-        <Button Margin="320,372,260,152" Width="220.08" Height="77.6889" BorderBrush="{x:Null}">
+        <Button Margin="320,372,260,152" Width="220.08" Height="77.6889" BorderBrush="{x:Null}" Click="To_WindowC">
             <Button.Background>
                 <ImageBrush ImageSource="BUTTON 2.png"/>
             </Button.Background>

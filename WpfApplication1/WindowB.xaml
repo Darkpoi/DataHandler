@@ -40,22 +40,22 @@
             <TextBlock.Background>
                 <ImageBrush ImageSource="选择置信概率P.png"/>
             </TextBlock.Background></TextBlock>
-        <ListView x:Name="LV4" Margin="539,185,53,339" BorderBrush="{x:Null}" MouseDoubleClick="DClick" Width="208.08" Height="77.6889">
+        <ListView x:Name="LV4" Margin="539,185,53,339" BorderBrush="{x:Null}" MouseDoubleClick="DClick99" Width="208.08" Height="77.6889">
             <ListView.Background>
                 <ImageBrush ImageSource="按钮4.png"/>
             </ListView.Background>
         </ListView>
-        <ListView x:Name="LV3" Margin="283,185,309,339" Width="208.08" Height="77.6889" BorderBrush="{x:Null}">
+        <ListView x:Name="LV3" Margin="283,185,309,339" Width="208.08" Height="77.6889" BorderBrush="{x:Null}" MouseDoubleClick="DClick95">
             <ListView.Background>
                 <ImageBrush ImageSource="按钮3.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="283,79,309,445" Width="208.08" Height="77.6889" BorderBrush="{x:Null}">
+        <ListView x:Name="LV1" Margin="283,79,309,445" Width="208.08" Height="77.6889" BorderBrush="{x:Null}" MouseDoubleClick="DClick68">
             <ListView.Background>
                 <ImageBrush ImageSource="按钮1.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="539,79,53,445" Height="77.6889" Width="208.08" BorderBrush="{x:Null}">
+        <ListView x:Name="LV2" Margin="539,79,53,445" Height="77.6889" Width="208.08" BorderBrush="{x:Null}" MouseDoubleClick="DClick90">
             <ListView.Background>
                 <ImageBrush ImageSource="按钮2.png"/>
             </ListView.Background>

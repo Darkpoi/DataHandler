@@ -23,20 +23,19 @@ namespace DataHandler
         public static double[] tmpdouble = new double[96];
         static InputWindow tmpw = new InputWindow();
         static WindowB wb = new WindowB();
+        static WindowC wc = new WindowC();
+        static WindowD wd = new WindowD();
         public static Data tmpdata;
         public MainWindow()
         {
-            //tmpw.Owner = this;
             InitializeComponent();
         }
 
         private void To_InputPage(object sender, RoutedEventArgs e)
         {
-            //InputWindow tmpw = new InputWindow();
-            Application.Current.MainWindow = wb;//tmpw;
+            Application.Current.MainWindow = tmpw;
             this.Hide();
-            //tmpw.Show();
-            wb.Show();
+            tmpw.Show();
             if (tmpw.Owner != this) tmpw.Owner = this;
             Output.Text = string.Empty;
         }
@@ -70,17 +69,20 @@ namespace DataHandler
             Out_Sigma.Text = tmpdata.Sigma.ToString("0.000000");
         }
 
-        private void GetFunc(object sender, RoutedEventArgs e)
+        private void To_WindowB(object sender, RoutedEventArgs e)
         {
-            //if (In_Delta.Text == string.Empty || In_Xi.Text == string.Empty) throw new Exception("Lack of Data");
-            //tmpdata.Xi = Convert.ToDouble(In_Xi.Text);
-            //tmpdata.Delta = Convert.ToDouble(In_Delta.Text);
-            //Out_Func.Text = (Math.Exp(-tmpdata.Delta * tmpdata.Delta / (2 * tmpdata.Xi * tmpdata.Xi)) / (Math.Sqrt(2 * Math.PI) * tmpdata.Xi)).ToString("0.000000");
+            Application.Current.MainWindow = wb;
+            this.Hide();
+            wb.Show();
+            if (wb.Owner != this) wb.Owner = this;
         }
 
-        private void GetUa(object sender, RoutedEventArgs e)
+        private void To_WindowC(object sender, RoutedEventArgs e)
         {
-            //Out_Ua.Text = tmpdata.Ua.ToString("0.000000");
+            Application.Current.MainWindow = wc;
+            this.Hide();
+            wc.Show();
+            if (wc.Owner != this) wc.Owner = this;
         }
     }
 }

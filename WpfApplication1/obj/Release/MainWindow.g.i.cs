@@ -135,6 +135,22 @@ namespace DataHandler {
             case 7:
             this.Output = ((System.Windows.Controls.TextBox)(target));
             return;
+            case 8:
+            
+            #line 55 "..\..\MainWindow.xaml"
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.To_WindowB);
+            
+            #line default
+            #line hidden
+            return;
+            case 9:
+            
+            #line 60 "..\..\MainWindow.xaml"
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.To_WindowC);
+            
+            #line default
+            #line hidden
+            return;
             }
             this._contentLoaded = true;
         }

@@ -56,6 +56,22 @@ namespace DataHandler {
         #line default
         #line hidden
         
+        
+        #line 53 "..\..\WindowB.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.ListView LV1;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 58 "..\..\WindowB.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.ListView LV2;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -90,13 +106,37 @@ namespace DataHandler {
             this.LV4 = ((System.Windows.Controls.ListView)(target));
             
             #line 43 "..\..\WindowB.xaml"
-            this.LV4.MouseDoubleClick += new System.Windows.Input.MouseButtonEventHandler(this.DClick);
+            this.LV4.MouseDoubleClick += new System.Windows.Input.MouseButtonEventHandler(this.DClick99);
             
             #line default
             #line hidden
             return;
             case 2:
             this.LV3 = ((System.Windows.Controls.ListView)(target));
+            
+            #line 48 "..\..\WindowB.xaml"
+            this.LV3.MouseDoubleClick += new System.Windows.Input.MouseButtonEventHandler(this.DClick95);
+            
+            #line default
+            #line hidden
+            return;
+            case 3:
+            this.LV1 = ((System.Windows.Controls.ListView)(target));
+            
+            #line 53 "..\..\WindowB.xaml"
+            this.LV1.MouseDoubleClick += new System.Windows.Input.MouseButtonEventHandler(this.DClick68);
+            
+            #line default
+            #line hidden
+            return;
+            case 4:
+            this.LV2 = ((System.Windows.Controls.ListView)(target));
+            
+            #line 58 "..\..\WindowB.xaml"
+            this.LV2.MouseDoubleClick += new System.Windows.Input.MouseButtonEventHandler(this.DClick90);
+            
+            #line default
+            #line hidden
             return;
             }
             this._contentLoaded = true;
