@@ -19,9 +19,19 @@ namespace DataHandler
     /// </summary>
     public partial class WindowC : Window
     {
+        static WindowD wd = new WindowD();
+        public Data tmpdata;
         public WindowC()
         {
+            wd.Owner = this;
             InitializeComponent();
+        }
+
+        private void To_WindowD(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow = wd;
+            wd.Show();
+            this.Hide();
         }
     }
 }

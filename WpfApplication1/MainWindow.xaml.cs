@@ -24,7 +24,6 @@ namespace DataHandler
         static InputWindow tmpw = new InputWindow();
         static WindowB wb = new WindowB();
         static WindowC wc = new WindowC();
-        static WindowD wd = new WindowD();
         public static Data tmpdata;
         public MainWindow()
         {
@@ -75,6 +74,8 @@ namespace DataHandler
             this.Hide();
             wb.Show();
             if (wb.Owner != this) wb.Owner = this;
+            wb.Out_N.Text = tmpdata.Num.ToString();
+            wb.tmpdata = tmpdata;
         }
 
         private void To_WindowC(object sender, RoutedEventArgs e)
@@ -83,6 +84,11 @@ namespace DataHandler
             this.Hide();
             wc.Show();
             if (wc.Owner != this) wc.Owner = this;
+        }
+
+        private void Get_Ua(object sender, RoutedEventArgs e)
+        {
+            Out_Ua.Text = tmpdata.Ua.ToString("0.000000");
         }
     }
 }

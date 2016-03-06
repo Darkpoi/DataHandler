@@ -43,12 +43,12 @@
                 <ImageBrush ImageSource="数据显示区.png"/>
             </TextBox.Background>
         </TextBox>
-        <Button Height="68.6889" Width="140.08" Margin="321,201,329,332" BorderBrush="{x:Null}">
+        <Button Height="68.6889" Width="140.08" Margin="321,201,329,332" BorderBrush="{x:Null}" Click="Get_Ua">
             <Button.Background>
                 <ImageBrush ImageSource="求A类标准不确定度.png"/>
             </Button.Background>
         </Button>
-        <TextBlock Width="263.08" Height="66.6889" Margin="500,201,37,334">
+        <TextBlock x:Name="Out_Ua" Width="263.08" Height="66.6889" Margin="500,201,37,334">
             <TextBlock.Background>
                 <ImageBrush ImageSource="显示区.png"/>
             </TextBlock.Background></TextBlock>

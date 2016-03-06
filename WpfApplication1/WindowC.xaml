@@ -60,7 +60,7 @@
             <TextBlock.Background>
                 <ImageBrush ImageSource="B类不确定显示区.png"/>
             </TextBlock.Background></TextBlock>
-        <Button Margin="229,387,412,136" Width="159.08" Height="78.6889" BorderBrush="{x:Null}">
+        <Button Margin="229,387,412,136" Width="159.08" Height="78.6889" BorderBrush="{x:Null}" Click="To_WindowD">
             <Button.Background>
                 <ImageBrush ImageSource="输入仪.png"/>
             </Button.Background>

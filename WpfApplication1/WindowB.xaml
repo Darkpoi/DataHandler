@@ -14,7 +14,7 @@
             <TextBlock.Background>
                 <ImageBrush ImageSource="测量次数.png"/>
             </TextBlock.Background></TextBlock>
-        <TextBlock Margin="288,290,168,239" Width="344.08" Height="72.6889" >
+        <TextBlock x:Name="Out_N" Margin="288,290,168,239" Width="344.08" Height="72.6889" >
             <TextBlock.Background>
                 <ImageBrush ImageSource="显示区 副本.png"/>
             </TextBlock.Background>
@@ -23,7 +23,7 @@
             <TextBlock.Background>
                 <ImageBrush ImageSource="T=.png"/>
             </TextBlock.Background></TextBlock>
-        <TextBlock Margin="289,376,167,153" Width="344.08" Height="72.6889">
+        <TextBlock x:Name="Out_T" Margin="289,376,167,153" Width="344.08" Height="72.6889">
             <TextBlock.Background>
                 <ImageBrush ImageSource="显示区 副本.png"/>
             </TextBlock.Background></TextBlock>
@@ -32,7 +32,7 @@
                 <ImageBrush ImageSource="求A类不确定度.png"/>
             </Button.Background>
         </Button>
-        <TextBlock Margin="289,462,167,67" Width="344.08" Height="72.6889">
+        <TextBlock x:Name="Out_A" Margin="289,462,167,67" Width="344.08" Height="72.6889">
             <TextBlock.Background>
                 <ImageBrush ImageSource="A显示区 .png"/>
             </TextBlock.Background></TextBlock>

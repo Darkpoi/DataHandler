@@ -19,24 +19,29 @@ namespace DataHandler
     /// </summary>
     public partial class WindowB : Window
     {
+
+        ImageBrush tmp1 = new ImageBrush();
+        ImageBrush tmp2 = new ImageBrush();
+        ImageBrush tmp3 = new ImageBrush();
+        ImageBrush tmp4 = new ImageBrush();
+        ImageBrush tmp11 = new ImageBrush();
+        ImageBrush tmp22 = new ImageBrush();
+        ImageBrush tmp33 = new ImageBrush();
+        ImageBrush tmp44 = new ImageBrush();
+        double[,] tmpdoubles = new[,] { { 1.32, 1.20, 1.14, 1.11, 1.09, 1.08, 1.07, 1.06, 1.04, 1.03, 1},
+        { 2.92, 2.35, 2.13, 2.02, 1.94, 1.86, 1.83, 1.76, 1.73, 1.71, 1.65},
+        { 4.30, 3.18, 2.78, 2.57, 2.46, 2.37, 2.31, 2.26, 2.15, 2.09, 1.96},
+        { 9.93, 5.84, 4.60, 4.03, 3.71, 3.50, 3.36, 3.25, 2.98, 2.86, 2.58} };
+        public Data tmpdata;
         public WindowB()
         {
-            ImageBrush tmp1 = new ImageBrush();
             tmp1.ImageSource = new BitmapImage(new Uri("按钮1.png", UriKind.Relative));
-            ImageBrush tmp2 = new ImageBrush();
             tmp2.ImageSource = new BitmapImage(new Uri("按钮2.png", UriKind.Relative));
-            ImageBrush tmp3 = new ImageBrush();
             tmp3.ImageSource = new BitmapImage(new Uri("按钮3.png", UriKind.Relative));
-            ImageBrush tmp4 = new ImageBrush();
             tmp4.ImageSource = new BitmapImage(new Uri("按钮4.png", UriKind.Relative));
-
-            ImageBrush tmp11 = new ImageBrush();
             tmp11.ImageSource = new BitmapImage(new Uri("按钮1改.png", UriKind.Relative));
-            ImageBrush tmp22 = new ImageBrush();
             tmp22.ImageSource = new BitmapImage(new Uri("按钮2改.png", UriKind.Relative));
-            ImageBrush tmp33 = new ImageBrush();
             tmp33.ImageSource = new BitmapImage(new Uri("按钮3改.png", UriKind.Relative));
-            ImageBrush tmp44 = new ImageBrush();
             tmp44.ImageSource = new BitmapImage(new Uri("按钮4改.png", UriKind.Relative));
 
             InitializeComponent();
@@ -45,35 +50,50 @@ namespace DataHandler
         private void DClick99(object sender, MouseButtonEventArgs e)
         {
             reset();
-            ImageBrush tmp = new ImageBrush();
-            tmp.ImageSource = new BitmapImage(new Uri("按钮4改.png", UriKind.Relative));
+            LV4.Background = tmp44;
+            Judge_T(4);
         }
 
         private void DClick90(object sender, MouseButtonEventArgs e)
         {
             reset();
-            ImageBrush tmp = new ImageBrush();
-            tmp.ImageSource = new BitmapImage(new Uri("按钮2改.png", UriKind.Relative));
+            LV2.Background = tmp22;
+            Judge_T(2);
         }
 
         private void DClick68(object sender, MouseButtonEventArgs e)
         {
             reset();
-            ImageBrush tmp = new ImageBrush();
-            tmp.ImageSource = new BitmapImage(new Uri("按钮1改.png", UriKind.Relative));
+            LV1.Background = tmp11;
+            Judge_T(1);
         }
 
         private void DClick95(object sender, MouseButtonEventArgs e)
         {
             reset();
-            ImageBrush tmp = new ImageBrush();
-            tmp.ImageSource = new BitmapImage(new Uri("按钮3改.png", UriKind.Relative);
+            LV3.Background = tmp33;
+            Judge_T(3);
         }
 
         private void reset()
         {
-            ImageBrush tmp = new ImageBrush();
-            tmp.ImageSource = new BitmapImage()
+            LV1.Background = tmp1;
+            LV2.Background = tmp2;
+            LV3.Background = tmp3;
+            LV4.Background = tmp4;
+        }
+
+        private void Judge_T(int k)
+        {
+            //This should be rewritten by back-end
+            double tmp;
+            if (tmpdata.Num < 11) tmp = tmpdoubles[tmpdata.Num - 3, k];
+            else if (tmpdata.Num < 16) tmp = tmpdoubles[8, k];
+            else if (tmpdata.Num < 21) tmp = tmpdoubles[9, k];
+            else tmp = tmpdoubles[10, k];
+            Out_T.Text = tmp.ToString();
+            tmp *= tmpdata.Ua;
+            Out_A.Text = tmp.ToString();
         }
     }
 }
