@@ -84,6 +84,7 @@ namespace DataHandler
             this.Hide();
             wc.Show();
             if (wc.Owner != this) wc.Owner = this;
+            wc.tmpdata = tmpdata;
         }
 
         private void Get_Ua(object sender, RoutedEventArgs e)

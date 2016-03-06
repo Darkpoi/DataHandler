@@ -10,27 +10,27 @@
         <Grid.Background>
             <ImageBrush ImageSource="界面B.png"/>
         </Grid.Background>
-        <ListView Margin="562,53,79,471" Width="159.08" BorderBrush="{x:Null}" Height="77.6889">
+        <ListView x:Name="LV2" Margin="562,53,79,471" Width="159.08" BorderBrush="{x:Null}" Height="77.6889" MouseDoubleClick="DClick2">
             <ListView.Background>
                 <ImageBrush ImageSource="游标卡尺 C= √3.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="562,137,79,387" Width="159.08" Height="77.6889" BorderBrush="{x:Null}">
+        <ListView x:Name="LV5" Margin="562,137,79,387" Width="159.08" Height="77.6889" BorderBrush="{x:Null}" MouseDoubleClick="DClick5">
             <ListView.Background>
                 <ImageBrush ImageSource="秒表.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="321,140,320,384" Width="159.08" Height="77.6889" BorderBrush="{x:Null}">
+        <ListView x:Name="LV4" Margin="321,140,320,384" Width="159.08" Height="77.6889" BorderBrush="{x:Null}" MouseDoubleClick="DClick4">
             <ListView.Background>
                 <ImageBrush ImageSource="物理天平.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="60,142,581,382" Width="159.08" Height="77.6889" BorderBrush="{x:Null}">
+        <ListView x:Name="LV3" Margin="60,142,581,382" Width="159.08" Height="77.6889" BorderBrush="{x:Null}" MouseDoubleClick="DClick3">
             <ListView.Background>
                 <ImageBrush ImageSource="千分尺.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="317,55,324,469" Width="160" Height="77.6889" BorderBrush="{x:Null}">
+        <ListView x:Name="LV1" Margin="317,55,324,469" Width="160" Height="77.6889" BorderBrush="{x:Null}" MouseDoubleClick="DClick1">
             <ListView.Background>
                 <ImageBrush ImageSource="米  尺 C=3.png"/>
             </ListView.Background>
@@ -48,7 +48,7 @@
             <TextBlock.Background>
                 <ImageBrush ImageSource="输入框.png"/>
             </TextBlock.Background></TextBlock>
-        <TextBlock Margin="535,390,145,139" Width="120.08" Height="72.6889">
+        <TextBlock x:Name="Out_Ub" Margin="535,390,145,139" Width="120.08" Height="72.6889">
             <TextBlock.Background>
                 <ImageBrush ImageSource="Ub显示区.png"/>
             </TextBlock.Background></TextBlock>
@@ -56,7 +56,7 @@
             <TextBlock.Background>
                 <ImageBrush ImageSource="B类不确定.png"/>
             </TextBlock.Background></TextBlock>
-        <TextBlock Margin="393,475,173,54" Width="234.08" Height="72.6889">
+        <TextBlock x:Name="Out_B" Margin="393,475,173,54" Width="234.08" Height="72.6889">
             <TextBlock.Background>
                 <ImageBrush ImageSource="B类不确定显示区.png"/>
             </TextBlock.Background></TextBlock>
@@ -65,42 +65,42 @@
                 <ImageBrush ImageSource="输入仪.png"/>
             </Button.Background>
         </Button>
-        <ListView Margin="637,300,68,232" Width="95.08" Height="69.6889" BorderBrush="{x:Null}">
+        <ListView x:Name="LLV8" Margin="637,300,68,232" Width="95.08" Height="69.6889" BorderBrush="{x:Null}" MouseDoubleClick="_DClick8">
             <ListView.Background>
                 <ImageBrush ImageSource="1.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="522,301,183,231" Width="95.08" Height="69.6889" BorderBrush="{x:Null}">
+        <ListView x:Name="LLV7" Margin="522,301,183,231" Width="95.08" Height="69.6889" BorderBrush="{x:Null}" MouseDoubleClick="_DClick7">
             <ListView.Background>
                 <ImageBrush ImageSource="0.990.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="405,302,300,230" Width="95.08" Height="69.6889" BorderBrush="{x:Null}">
+        <ListView x:Name="LLV6" Margin="405,302,300,230" Width="95.08" Height="69.6889" BorderBrush="{x:Null}" MouseDoubleClick="_DClick6">
             <ListView.Background>
                 <ImageBrush ImageSource="0.977.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="285,302,420,230" BorderBrush="{x:Null}" Width="95.08" Height="69.6889">
+        <ListView x:Name="LLV5" Margin="285,302,420,230" BorderBrush="{x:Null}" Width="95.08" Height="69.6889" MouseDoubleClick="_DClick5">
             <ListView.Background>
                 <ImageBrush ImageSource="0.955.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="635,226,70,306" Width="95.08" Height="69.6889" BorderBrush="{x:Null}">
+        <ListView x:Name="LLV4" Margin="635,226,70,306" Width="95.08" Height="69.6889" BorderBrush="{x:Null}" MouseDoubleClick="_DClick4">
             <ListView.Background>
                 <ImageBrush ImageSource="0.950.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="521,226,184,306" BorderBrush="{x:Null}" Width="95.08" Height="69.6889">
+        <ListView x:Name="LLV3" Margin="521,226,184,306" BorderBrush="{x:Null}" Width="95.08" Height="69.6889" MouseDoubleClick="_DClick3">
             <ListView.Background>
                 <ImageBrush ImageSource="0.900.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="405,226,300,306" Width="95.08" Height="69.6889" BorderBrush="{x:Null}">
+        <ListView x:Name="LLV2" Margin="405,226,300,306" Width="95.08" Height="69.6889" BorderBrush="{x:Null}" MouseDoubleClick="_DClick2">
             <ListView.Background>
                 <ImageBrush ImageSource="0.683.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="286,226,419,306" Width="95.08" Height="69.6889" BorderBrush="{x:Null}">
+        <ListView x:Name="LLV1" Margin="286,226,419,306" Width="95.08" Height="69.6889" BorderBrush="{x:Null}" MouseDoubleClick="_DClick1">
             <ListView.Background>
                 <ImageBrush ImageSource="0.500.png"/>
             </ListView.Background>

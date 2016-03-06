@@ -33,6 +33,7 @@ namespace DataHandler
         { 4.30, 3.18, 2.78, 2.57, 2.46, 2.37, 2.31, 2.26, 2.15, 2.09, 1.96},
         { 9.93, 5.84, 4.60, 4.03, 3.71, 3.50, 3.36, 3.25, 2.98, 2.86, 2.58} };
         public Data tmpdata;
+
         public WindowB()
         {
             tmp1.ImageSource = new BitmapImage(new Uri("按钮1.png", UriKind.Relative));
@@ -92,8 +93,10 @@ namespace DataHandler
             else if (tmpdata.Num < 21) tmp = tmpdoubles[9, k];
             else tmp = tmpdoubles[10, k];
             Out_T.Text = tmp.ToString();
+            tmpdata.T = tmp;
             tmp *= tmpdata.Ua;
             Out_A.Text = tmp.ToString();
+            tmpdata.A = tmp;
         }
     }
 }

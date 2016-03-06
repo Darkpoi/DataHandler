@@ -16,7 +16,13 @@ namespace DataHandler
         public double Ave { get; set; }
         public double Sigma { get; set; }
         public double Ua { get; set; }
-
+        public double A { get; set; }
+        public double B { get; set; }
+        public double T { get; set; }
+        public double C { get; set; }
+        public double Ub { get; set; }
+        public double Delta_Yi { get; set; }
+        public double Kp { get; set; }
 
         public Data(int num, double[] tmpDoubles, double delta, double xi)
         {
