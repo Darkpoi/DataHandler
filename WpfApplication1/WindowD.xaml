@@ -24,92 +24,92 @@
                 <ImageBrush ImageSource="OK.png"/>
             </Button.Background>
         </Button>
-        <ListView Margin="641,98,40,462" Width="119" Height="40" BorderBrush="{x:Null}">
+        <ListView x:Name="LV2" Margin="641,98,40,462" Width="119" Height="40" BorderBrush="{x:Null}">
             <ListView.Background>
                 <ImageBrush ImageSource="±1.5  mm (60-100).png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="516,96,156,464" Width="128" Height="40" BorderBrush="{x:Null}">
+        <ListView x:Name="LV1" Margin="516,96,156,464" Width="128" Height="40" BorderBrush="{x:Null}">
             <ListView.Background>
                 <ImageBrush ImageSource="±1.00  mm (30-50).png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="573,464,105,98" Width="122" Height="38" BorderBrush="{x:Null}">
+        <ListView x:Name="LV18" Margin="573,464,105,98" Width="122" Height="38" BorderBrush="{x:Null}">
             <ListView.Background>
                 <ImageBrush ImageSource="± 0.2  ℃.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="572,423,106,142" Width="122" Height="35" BorderBrush="{x:Null}">
+        <ListView x:Name="LV17" Margin="572,423,106,142" Width="122" Height="35" BorderBrush="{x:Null}">
             <ListView.Background>
                 <ImageBrush ImageSource="± 1  ℃.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="645,186,36,380" Width="119" Height="34" BorderBrush="{x:Null}">
+        <ListView x:Name="LV7" Margin="645,186,36,380" Width="119" Height="34" BorderBrush="{x:Null}">
             <ListView.Background>
                 <ImageBrush ImageSource="±1.2 mm( 2m ).png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="516,186,164,380" Width="120" Height="34" BorderBrush="{x:Null}">
+        <ListView x:Name="LV6" Margin="516,186,164,380" Width="120" Height="34" BorderBrush="{x:Null}">
             <ListView.Background>
                 <ImageBrush ImageSource="±0.08 mm ( 1m ).png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="644,225,34,338" Width="122" Height="37" BorderBrush="{x:Null}">
+        <ListView x:Name="LV9" Margin="644,225,34,338" Width="122" Height="37" BorderBrush="{x:Null}">
             <ListView.Background>
                 <ImageBrush ImageSource="±0.05 mm (300).png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="515,225,163,338" Width="122" Height="37" BorderBrush="{x:Null}">
+        <ListView x:Name="LV8" Margin="515,225,163,338" Width="122" Height="37" BorderBrush="{x:Null}">
             <ListView.Background>
                 <ImageBrush ImageSource="±0.02 mm (125).png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="682,300,29,246" Width="89" Height="54" BorderBrush="{x:Null}">
+        <ListView x:Name="LV13" Margin="682,300,29,246" Width="89" Height="54" BorderBrush="{x:Null}">
             <ListView.Background>
                 <ImageBrush ImageSource="0.04 g （1_3及以下）.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="596,300,122,246" Width="82" Height="54" BorderBrush="{x:Null}">
+        <ListView x:Name="LV12" Margin="596,300,122,246" Width="82" Height="54" BorderBrush="{x:Null}">
             <ListView.Background>
                 <ImageBrush ImageSource="0.06 g （1_2）.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="515,300,207,246" BorderBrush="{x:Null}" Width="78" Height="54">
+        <ListView x:Name="LV11" Margin="515,300,207,246" BorderBrush="{x:Null}" Width="78" Height="54">
             <ListView.Background>
                 <ImageBrush ImageSource="0.08 g （近满）.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="683,142,44,418" Width="73" Height="40" BorderBrush="{x:Null}">
+        <ListView x:Name="LV5" Margin="683,142,44,418" Width="73" Height="40" BorderBrush="{x:Null}">
             <ListView.Background>
                 <ImageBrush ImageSource="±0.20 mm （1000）.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="600,141,132,419" Height="40" Width="68" BorderBrush="{x:Null}">
+        <ListView x:Name="LV4" Margin="600,141,132,419" Height="40" Width="68" BorderBrush="{x:Null}">
             <ListView.Background>
                 <ImageBrush ImageSource="±0.15 mm (500).png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="514,141,204,419" Width="82" Height="40" BorderBrush="{x:Null}">
+        <ListView x:Name="LV3" Margin="514,141,204,419" Width="82" Height="40" BorderBrush="{x:Null}">
             <ListView.Background>
                 <ImageBrush ImageSource="±0.10  mm (150).png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="684,365,27,181" Width="89" Height="54" BorderBrush="{x:Null}">
+        <ListView x:Name="LV16" Margin="684,365,27,181" Width="89" Height="54" BorderBrush="{x:Null}">
             <ListView.Background>
                 <ImageBrush ImageSource="0.7mg （1_3及以下）.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="599,365,119,181" Width="82" Height="54" BorderBrush="{x:Null}">
+        <ListView x:Name="LV15" Margin="599,365,119,181" Width="82" Height="54" BorderBrush="{x:Null}">
             <ListView.Background>
                 <ImageBrush ImageSource="1.0 mg （1_2）.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="513,365,205,181" Width="82" Height="54" BorderBrush="{x:Null}">
+        <ListView x:Name="LV14" Margin="513,365,205,181" Width="82" Height="54" BorderBrush="{x:Null}">
             <ListView.Background>
                 <ImageBrush ImageSource="1.3 mg （近满）.png"/>
             </ListView.Background>
         </ListView>
-        <ListView Margin="572,263,106,302" Width="122" Height="35" BorderBrush="{x:Null}">
+        <ListView x:Name="LV10" Margin="572,263,106,302" Width="122" Height="35" BorderBrush="{x:Null}">
             <ListView.Background>
                 <ImageBrush ImageSource="± 0004  mm.png"/>
             </ListView.Background>

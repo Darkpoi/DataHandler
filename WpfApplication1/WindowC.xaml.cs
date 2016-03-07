@@ -89,16 +89,28 @@ namespace DataHandler
             Application.Current.MainWindow = wd;
             wd.Show();
             this.Hide();
+            wd.tmpdata = tmpdata;
         }
 
         private void reset()
         {
-
+            LV1.Background = tmp1;
+            LV2.Background = tmp2;
+            LV3.Background = tmp3;
+            LV4.Background = tmp4;
+            LV5.Background = tmp5;
         }
 
         private void _reset()
         {
-
+            LLV1.Background = _tmp1;
+            LLV2.Background = _tmp2;
+            LLV3.Background = _tmp3;
+            LLV4.Background = _tmp4;
+            LLV5.Background = _tmp5;
+            LLV6.Background = _tmp6;
+            LLV7.Background = _tmp7;
+            LLV8.Background = _tmp8;
         }
 
         public void Judge()
@@ -107,6 +119,12 @@ namespace DataHandler
             {
                 Out_Ub.Text = (tmpdata.Ub = tmpdata.Delta_Yi / tmpdata.C).ToString("0.000000");
                 Out_B.Text = (tmpdata.B = tmpdata.Kp * tmpdata.Ub).ToString("0.000000");
+            }
+            else
+            {
+                Out_B.Text = string.Empty;
+                Out_Ub.Text = string.Empty;
+                tmpdata.Ub = tmpdata.B = 0;
             }
         }
 
