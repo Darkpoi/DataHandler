@@ -33,17 +33,18 @@ namespace DataHandler
         { 4.30, 3.18, 2.78, 2.57, 2.46, 2.37, 2.31, 2.26, 2.15, 2.09, 1.96},
         { 9.93, 5.84, 4.60, 4.03, 3.71, 3.50, 3.36, 3.25, 2.98, 2.86, 2.58} };
         public Data tmpdata;
+        public int chosen;
 
         public WindowB()
         {
-            tmp1.ImageSource = new BitmapImage(new Uri("按钮1.png", UriKind.Relative));
-            tmp2.ImageSource = new BitmapImage(new Uri("按钮2.png", UriKind.Relative));
-            tmp3.ImageSource = new BitmapImage(new Uri("按钮3.png", UriKind.Relative));
-            tmp4.ImageSource = new BitmapImage(new Uri("按钮4.png", UriKind.Relative));
-            tmp11.ImageSource = new BitmapImage(new Uri("按钮1改.png", UriKind.Relative));
-            tmp22.ImageSource = new BitmapImage(new Uri("按钮2改.png", UriKind.Relative));
-            tmp33.ImageSource = new BitmapImage(new Uri("按钮3改.png", UriKind.Relative));
-            tmp44.ImageSource = new BitmapImage(new Uri("按钮4改.png", UriKind.Relative));
+            tmp1.ImageSource = new BitmapImage(new Uri("tempdata/按钮1.png", UriKind.Relative));
+            tmp2.ImageSource = new BitmapImage(new Uri("tempdata/按钮2.png", UriKind.Relative));
+            tmp3.ImageSource = new BitmapImage(new Uri("tempdata/按钮3.png", UriKind.Relative));
+            tmp4.ImageSource = new BitmapImage(new Uri("tempdata/按钮4.png", UriKind.Relative));
+            tmp11.ImageSource = new BitmapImage(new Uri("tempdata/按钮1改.png", UriKind.Relative));
+            tmp22.ImageSource = new BitmapImage(new Uri("tempdata/按钮2改.png", UriKind.Relative));
+            tmp33.ImageSource = new BitmapImage(new Uri("tempdata/按钮3改.png", UriKind.Relative));
+            tmp44.ImageSource = new BitmapImage(new Uri("tempdata/按钮4改.png", UriKind.Relative));
 
             InitializeComponent();
         }
@@ -52,6 +53,7 @@ namespace DataHandler
         {
             reset();
             LV4.Background = tmp44;
+            chosen = 4;
             Judge_T(4);
         }
 
@@ -59,6 +61,7 @@ namespace DataHandler
         {
             reset();
             LV2.Background = tmp22;
+            chosen = 2;
             Judge_T(2);
         }
 
@@ -66,6 +69,7 @@ namespace DataHandler
         {
             reset();
             LV1.Background = tmp11;
+            chosen = 1;
             Judge_T(1);
         }
 
@@ -73,6 +77,7 @@ namespace DataHandler
         {
             reset();
             LV3.Background = tmp33;
+            chosen = 3;
             Judge_T(3);
         }
 
@@ -84,7 +89,7 @@ namespace DataHandler
             LV4.Background = tmp4;
         }
 
-        private void Judge_T(int k)
+        public void Judge_T(int k)
         {
             //This should be rewritten by back-end
             double tmp;
@@ -97,6 +102,21 @@ namespace DataHandler
             tmp *= tmpdata.Ua;
             Out_A.Text = tmp.ToString();
             tmpdata.A = tmp;
+        }
+
+        private void To_Back(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            this.Owner.Show();
+        }
+
+        public void Out_Clear()
+        {
+            reset();
+            Out_T.Text = string.Empty;
+            Out_N.Text = string.Empty;
+            Out_A.Text = string.Empty;
+            tmpdata = null;
         }
     }
 }

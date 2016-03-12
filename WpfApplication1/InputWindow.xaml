@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataHandler"
         mc:Ignorable="d"
-        Title="InputWindow" Height="632.6889" Width="808.08">
+        Title="InputWindow" Height="650" Width="820" MinWidth="820" MaxWidth="820" MinHeight="650" MaxHeight="650">
     <Grid>
         <Button Width="157.08" Height="71.6889" HorizontalAlignment="Left" VerticalAlignment="Top" d:LayoutOverrides="Width, LeftMargin, RightMargin, TopMargin, BottomMargin" BorderBrush="{x:Null}" Content="OK" FontFamily="Adobe Heiti Std R" FontSize="40" Click="GoBack">
             <Button.Background>

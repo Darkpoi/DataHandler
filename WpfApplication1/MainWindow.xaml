@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataHandler"
         mc:Ignorable="d"
-        Title="MainWindow" Height="632.6889" Width="808.08">
+        Title="MainWindow" Height="650" Width="820" MinWidth="820" MaxWidth="820" MinHeight="650" MaxHeight="650">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="主界面 界面A.png"/>
@@ -48,7 +48,7 @@
                 <ImageBrush ImageSource="求A类标准不确定度.png"/>
             </Button.Background>
         </Button>
-        <TextBlock x:Name="Out_Ua" Width="263.08" Height="66.6889" Margin="500,201,37,334">
+        <TextBlock x:Name="Out_Ua" Width="263.08" Height="66.6889" Margin="500,201,37,334" FontFamily="Adobe Heiti Std R" FontSize="26.667" TextAlignment="Center">
             <TextBlock.Background>
                 <ImageBrush ImageSource="显示区.png"/>
             </TextBlock.Background></TextBlock>
@@ -62,12 +62,12 @@
                 <ImageBrush ImageSource="BUTTON 2.png"/>
             </Button.Background>
         </Button>
-        <Button Margin="316,468,195,56" Width="289.08" Height="77.6889" BorderBrush="{x:Null}">
+        <Button Margin="316,468,195,56" Width="289.08" Height="77.6889" BorderBrush="{x:Null}" Click="Final_Answer">
             <Button.Background>
                 <ImageBrush ImageSource="BUTTON 3.png"/>
             </Button.Background>
         </Button>
-        <TextBlock Margin="616,473,34,56" Width="150.08" Height="72.6889">
+        <TextBlock x:Name="Out" Margin="616,473,34,56" Width="150.08" Height="72.6889" FontFamily="Adobe Heiti Std R" FontSize="26.667" TextAlignment="Center">
             <TextBlock.Background>
                 <ImageBrush ImageSource="总不确定度显示区.png"/>
             </TextBlock.Background></TextBlock>

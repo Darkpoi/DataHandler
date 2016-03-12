@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataHandler"
         mc:Ignorable="d"
-        Title="WindowC" Height="632.6889" Width="808.08">
+        Title="WindowC" Height="650" Width="820" MinWidth="820" MaxWidth="820" MinHeight="650" MaxHeight="650">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="界面B.png"/>
@@ -48,15 +48,16 @@
             <TextBlock.Background>
                 <ImageBrush ImageSource="输入框.png"/>
             </TextBlock.Background></TextBlock>
-        <TextBlock x:Name="Out_Ub" Margin="535,390,145,139" Width="120.08" Height="72.6889">
+        <TextBlock x:Name="Out_Ub" Margin="535,390,145,139" Width="120.08" Height="72.6889" FontFamily="Adobe Heiti Std R" FontSize="26.667" TextAlignment="Center">
             <TextBlock.Background>
                 <ImageBrush ImageSource="Ub显示区.png"/>
             </TextBlock.Background></TextBlock>
-        <TextBlock Margin="189,473,411,51" Width="200.08" Height="77.6889">
-            <TextBlock.Background>
+        <Button Margin="189,473,411,51" Width="200.08" Height="77.6889" Click="To_Back" BorderBrush="{x:Null}">
+            <Button.Background>
                 <ImageBrush ImageSource="B类不确定.png"/>
-            </TextBlock.Background></TextBlock>
-        <TextBlock x:Name="Out_B" Margin="393,475,173,54" Width="234.08" Height="72.6889">
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="Out_B" Margin="393,475,173,54" Width="234.08" Height="72.6889" FontFamily="Adobe Heiti Std R" FontSize="26.667" TextAlignment="Center">
             <TextBlock.Background>
                 <ImageBrush ImageSource="B类不确定显示区.png"/>
             </TextBlock.Background></TextBlock>

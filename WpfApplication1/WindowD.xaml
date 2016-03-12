@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataHandler"
         mc:Ignorable="d"
-        Title="WindowD" Height="632.6889" Width="808.08">
+        Title="WindowD" Height="650" Width="820" MinWidth="820" MaxWidth="820" MinHeight="650" MaxHeight="650">
     <Grid Width="800" Height="600">
         <Grid.Background>
             <ImageBrush ImageSource="界面D.png"/>
@@ -14,7 +14,7 @@
             <TextBlock.Background>
                 <ImageBrush ImageSource="若无上述仪器，请输入△仪.png"/>
             </TextBlock.Background></TextBlock>
-        <TextBox x:Name="Out" Margin="325,513,341,50" Width="134" Height="37" BorderBrush="{x:Null}">
+        <TextBox x:Name="Out" Margin="325,508,341,46" Width="134" BorderBrush="{x:Null}" FontFamily="Adobe Heiti Std R" FontSize="26.667" TextAlignment="Center" IsReadOnly="True" MouseDoubleClick="Write">
             <TextBox.Background>
                 <ImageBrush ImageSource="显示屏.png"/>
             </TextBox.Background>

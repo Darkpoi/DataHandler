@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataHandler"
         mc:Ignorable="d"
-        Title="WindowB" Height="632.6889" Width="808.08">
+        Title="WindowB" Height="650" Width="820" MinWidth="820" MaxWidth="820" MinHeight="650" MaxHeight="650">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="界面B.png"/>
@@ -14,7 +14,7 @@
             <TextBlock.Background>
                 <ImageBrush ImageSource="测量次数.png"/>
             </TextBlock.Background></TextBlock>
-        <TextBlock x:Name="Out_N" Margin="288,290,168,239" Width="344.08" Height="72.6889" >
+        <TextBlock x:Name="Out_N" Margin="288,290,168,239" Width="344.08" Height="72.6889" TextAlignment="Center" FontFamily="Adobe Heiti Std R" FontSize="26.667" >
             <TextBlock.Background>
                 <ImageBrush ImageSource="显示区 副本.png"/>
             </TextBlock.Background>
@@ -23,16 +23,16 @@
             <TextBlock.Background>
                 <ImageBrush ImageSource="T=.png"/>
             </TextBlock.Background></TextBlock>
-        <TextBlock x:Name="Out_T" Margin="289,376,167,153" Width="344.08" Height="72.6889">
+        <TextBlock x:Name="Out_T" Margin="289,376,167,153" Width="344.08" Height="72.6889" FontFamily="Adobe Heiti Std R" FontSize="26.667" TextAlignment="Center">
             <TextBlock.Background>
                 <ImageBrush ImageSource="显示区 副本.png"/>
             </TextBlock.Background></TextBlock>
-        <Button Margin="26,462,566,62" Width="208.08" Height="77.6889" BorderBrush="{x:Null}">
+        <Button Margin="26,462,566,62" Width="208.08" Height="77.6889" BorderBrush="{x:Null}" Click="To_Back">
             <Button.Background>
                 <ImageBrush ImageSource="求A类不确定度.png"/>
             </Button.Background>
         </Button>
-        <TextBlock x:Name="Out_A" Margin="289,462,167,67" Width="344.08" Height="72.6889">
+        <TextBlock x:Name="Out_A" Margin="289,462,167,67" Width="344.08" Height="72.6889" FontFamily="Adobe Heiti Std R" FontSize="26.667" TextAlignment="Center">
             <TextBlock.Background>
                 <ImageBrush ImageSource="A显示区 .png"/>
             </TextBlock.Background></TextBlock>

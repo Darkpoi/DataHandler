@@ -50,35 +50,34 @@ namespace DataHandler
         public Data tmpdata;
         public WindowC()
         {
-            wd.Owner = this;
-            tmp1.ImageSource = new BitmapImage(new Uri("米  尺 C=3.png", UriKind.Relative));
-            tmp2.ImageSource = new BitmapImage(new Uri("游标卡尺 C= √3.png", UriKind.Relative));
-            tmp3.ImageSource = new BitmapImage(new Uri("千分尺.png", UriKind.Relative));
-            tmp4.ImageSource = new BitmapImage(new Uri("物理天平.png", UriKind.Relative));
-            tmp5.ImageSource = new BitmapImage(new Uri("秒表.png", UriKind.Relative));
+            tmp1.ImageSource = new BitmapImage(new Uri("tempdata/米  尺 C=3.png", UriKind.Relative));
+            tmp2.ImageSource = new BitmapImage(new Uri("tempdata/游标卡尺 C= √3.png", UriKind.Relative));
+            tmp3.ImageSource = new BitmapImage(new Uri("tempdata/千分尺.png", UriKind.Relative));
+            tmp4.ImageSource = new BitmapImage(new Uri("tempdata/物理天平.png", UriKind.Relative));
+            tmp5.ImageSource = new BitmapImage(new Uri("tempdata/秒表.png", UriKind.Relative));
 
-            tmp11.ImageSource = new BitmapImage(new Uri("米  尺 C=3改.png", UriKind.Relative));
-            tmp22.ImageSource = new BitmapImage(new Uri("游标卡尺 C= √3改.png", UriKind.Relative));
-            tmp33.ImageSource = new BitmapImage(new Uri("千分尺改.png", UriKind.Relative));
-            tmp44.ImageSource = new BitmapImage(new Uri("物理天平改.png", UriKind.Relative));
-            tmp55.ImageSource = new BitmapImage(new Uri("秒表改.png", UriKind.Relative));
+            tmp11.ImageSource = new BitmapImage(new Uri("tempdata/米  尺 C=3改.png", UriKind.Relative));
+            tmp22.ImageSource = new BitmapImage(new Uri("tempdata/游标卡尺 C= √3改.png", UriKind.Relative));
+            tmp33.ImageSource = new BitmapImage(new Uri("tempdata/千分尺改.png", UriKind.Relative));
+            tmp44.ImageSource = new BitmapImage(new Uri("tempdata/物理天平改.png", UriKind.Relative));
+            tmp55.ImageSource = new BitmapImage(new Uri("tempdata/秒表改.png", UriKind.Relative));
 
-            _tmp1.ImageSource = new BitmapImage(new Uri("0.500.png", UriKind.Relative));
-            _tmp2.ImageSource = new BitmapImage(new Uri("0.683.png", UriKind.Relative));
-            _tmp3.ImageSource = new BitmapImage(new Uri("0.900.png", UriKind.Relative));
-            _tmp4.ImageSource = new BitmapImage(new Uri("0.950.png", UriKind.Relative));
-            _tmp5.ImageSource = new BitmapImage(new Uri("0.955.png", UriKind.Relative));
-            _tmp6.ImageSource = new BitmapImage(new Uri("0.977.png", UriKind.Relative));
-            _tmp7.ImageSource = new BitmapImage(new Uri("0.990.png", UriKind.Relative));
-            //_tmp8.ImageSource = new BitmapImage(new Uri("1.png", UriKind.Relative));
+            _tmp1.ImageSource = new BitmapImage(new Uri("tempdata/0.500.png", UriKind.Relative));
+            _tmp2.ImageSource = new BitmapImage(new Uri("tempdata/0.683.png", UriKind.Relative));
+            _tmp3.ImageSource = new BitmapImage(new Uri("tempdata/0.900.png", UriKind.Relative));
+            _tmp4.ImageSource = new BitmapImage(new Uri("tempdata/0.950.png", UriKind.Relative));
+            _tmp5.ImageSource = new BitmapImage(new Uri("tempdata/0.955.png", UriKind.Relative));
+            _tmp6.ImageSource = new BitmapImage(new Uri("tempdata/0.977.png", UriKind.Relative));
+            _tmp7.ImageSource = new BitmapImage(new Uri("tempdata/0.990.png", UriKind.Relative));
+            _tmp8.ImageSource = new BitmapImage(new Uri("tempdata/1.png", UriKind.Relative));
 
-            _tmp11.ImageSource = new BitmapImage(new Uri("0.500改.png", UriKind.Relative));
-            _tmp22.ImageSource = new BitmapImage(new Uri("0.683改.png", UriKind.Relative));
-            _tmp33.ImageSource = new BitmapImage(new Uri("0.900改.png", UriKind.Relative));
-            _tmp44.ImageSource = new BitmapImage(new Uri("0.950改.png", UriKind.Relative));
-            _tmp55.ImageSource = new BitmapImage(new Uri("0.955改.png", UriKind.Relative));
-            _tmp66.ImageSource = new BitmapImage(new Uri("0.977改.png", UriKind.Relative));
-            _tmp77.ImageSource = new BitmapImage(new Uri("0.990改.png", UriKind.Relative));
+            _tmp11.ImageSource = new BitmapImage(new Uri("tempdata/0.500改.png", UriKind.Relative));
+            _tmp22.ImageSource = new BitmapImage(new Uri("tempdata/0.683改.png", UriKind.Relative));
+            _tmp33.ImageSource = new BitmapImage(new Uri("tempdata/0.900改.png", UriKind.Relative));
+            _tmp44.ImageSource = new BitmapImage(new Uri("tempdata/0.950改.png", UriKind.Relative));
+            _tmp55.ImageSource = new BitmapImage(new Uri("tempdata/0.955改.png", UriKind.Relative));
+            _tmp66.ImageSource = new BitmapImage(new Uri("tempdata/0.977改.png", UriKind.Relative));
+            _tmp77.ImageSource = new BitmapImage(new Uri("tempdata/0.990改.png", UriKind.Relative));
             //_tmp88.ImageSource = new BitmapImage(new Uri("1改.png", UriKind.Relative));
 
             InitializeComponent();
@@ -89,6 +88,7 @@ namespace DataHandler
             Application.Current.MainWindow = wd;
             wd.Show();
             this.Hide();
+            if (wd.Owner != this) wd.Owner = this;
             wd.tmpdata = tmpdata;
         }
 
@@ -115,10 +115,16 @@ namespace DataHandler
 
         public void Judge()
         {
-            if (tmpdata.Kp != 0 && tmpdata.Delta_Yi != 0 && tmpdata.C != 0)
+            if (tmpdata.Delta_Yi != 0 && tmpdata.C != 0)
             {
                 Out_Ub.Text = (tmpdata.Ub = tmpdata.Delta_Yi / tmpdata.C).ToString("0.000000");
-                Out_B.Text = (tmpdata.B = tmpdata.Kp * tmpdata.Ub).ToString("0.000000");
+                if (tmpdata.Kp != 0)
+                    Out_B.Text = (tmpdata.B = tmpdata.Kp * tmpdata.Ub).ToString("0.000000");
+                else
+                {
+                    Out_B.Text = string.Empty;
+                    tmpdata.B = 0;
+                }
             }
             else
             {
@@ -229,6 +235,23 @@ namespace DataHandler
             _reset();
             //LLV8.Background = _tmp88;
             tmpdata.Kp = 0;
+            Judge();
+        }
+
+        private void To_Back(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            this.Owner.Show();
+        }
+
+        public void Out_Clear()
+        {
+            reset();
+            _reset();
+            Out_B.Text = string.Empty;
+            Out_Ub.Text = string.Empty;
+            wd.Out_Clear();
+            tmpdata = null;
         }
     }
 }
