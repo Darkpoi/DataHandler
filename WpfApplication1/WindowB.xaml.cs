@@ -93,10 +93,10 @@ namespace DataHandler
         {
             //This should be rewritten by back-end
             double tmp;
-            if (tmpdata.Num < 11) tmp = tmpdoubles[tmpdata.Num - 3, k];
-            else if (tmpdata.Num < 16) tmp = tmpdoubles[8, k];
-            else if (tmpdata.Num < 21) tmp = tmpdoubles[9, k];
-            else tmp = tmpdoubles[10, k];
+            if (tmpdata.Num < 11) tmp = tmpdoubles[k - 1, tmpdata.Num - 3];
+            else if (tmpdata.Num < 16) tmp = tmpdoubles[k - 1, 8];
+            else if (tmpdata.Num < 21) tmp = tmpdoubles[k - 1, 9];
+            else tmp = tmpdoubles[k - 1, 10];
             Out_T.Text = tmp.ToString();
             tmpdata.T = tmp;
             tmp *= tmpdata.Ua;
