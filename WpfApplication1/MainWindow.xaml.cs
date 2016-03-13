@@ -45,6 +45,7 @@ namespace DataHandler
             Out_Ave.Text = string.Empty;
             Out_Sigma.Text = string.Empty;
             Out.Text = string.Empty;
+            Out_Ua.Text = string.Empty;
             wb.Out_Clear();
             wc.Out_Clear();
             tmpdata = null;
