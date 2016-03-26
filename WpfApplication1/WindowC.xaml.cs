@@ -110,12 +110,11 @@ namespace DataHandler
             LLV5.Background = _tmp5;
             LLV6.Background = _tmp6;
             LLV7.Background = _tmp7;
-            LLV8.Background = _tmp8;
         }
 
         public void Judge()
         {
-            if (tmpdata.Delta_Yi != 0 && tmpdata.C != 0)
+            if (tmpdata.flag != 0 && tmpdata.C != 0)
             {
                 Out_Ub.Text = (tmpdata.Ub = tmpdata.Delta_Yi / tmpdata.C).ToString("0.000000");
                 if (tmpdata.Kp != 0)
@@ -227,14 +226,6 @@ namespace DataHandler
             _reset();
             LLV7.Background = _tmp77;
             tmpdata.Kp = 3;
-            Judge();
-        }
-
-        private void _DClick8(object sender, MouseButtonEventArgs e)
-        {
-            _reset();
-            //LLV8.Background = _tmp88;
-            tmpdata.Kp = 0;
             Judge();
         }
 

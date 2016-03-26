@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DataHandler.exe" size="2358752">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DataHandler.exe" size="2272224">
       <assemblyIdentity name="DataHandler" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>MBl7JGgcYOsMXqjqub71gOLy69BBkZPQ4Qh3vu060GI=</dsig:DigestValue>
+        <dsig:DigestValue>tnewyxGGEcZK+kM6hIUQq6K6iyjTaHgT9cslJMLRXsg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

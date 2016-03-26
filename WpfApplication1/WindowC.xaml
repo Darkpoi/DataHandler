@@ -66,11 +66,6 @@
                 <ImageBrush ImageSource="输入仪.png"/>
             </Button.Background>
         </Button>
-        <ListView x:Name="LLV8" Margin="637,300,68,232" Width="95.08" Height="69.6889" BorderBrush="{x:Null}" MouseDoubleClick="_DClick8">
-            <ListView.Background>
-                <ImageBrush ImageSource="1.png"/>
-            </ListView.Background>
-        </ListView>
         <ListView x:Name="LLV7" Margin="522,301,183,231" Width="95.08" Height="69.6889" BorderBrush="{x:Null}" MouseDoubleClick="_DClick7">
             <ListView.Background>
                 <ImageBrush ImageSource="0.990.png"/>

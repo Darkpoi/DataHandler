@@ -268,7 +268,12 @@ namespace DataHandler
 
         private void To_Back(object sender, RoutedEventArgs e)
         {
-            tmpdata.Delta_Yi = Convert.ToDouble(Out.Text);
+            if (Out.Text != string.Empty)
+            {
+                tmpdata.Delta_Yi = Convert.ToDouble(Out.Text);
+                tmpdata.flag = 1;
+            }
+            else tmpdata.flag = 0;
             this.Hide();
             this.Owner.Show();
             WindowC tmpw = (WindowC) this.Owner;

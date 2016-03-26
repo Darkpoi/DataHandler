@@ -23,6 +23,7 @@ namespace DataHandler
         public double Ub { get; set; }
         public double Delta_Yi { get; set; }
         public double Kp { get; set; }
+        public int flag { get; set; }
 
         public Data(int num, double[] tmpDoubles, double delta, double xi)
         {
@@ -33,6 +34,7 @@ namespace DataHandler
             Ave = this._Ave();
             Sigma = this._Sigma();
             Ua = this._Ua();
+            flag = 0;
         }
 
         private double _Ave()
